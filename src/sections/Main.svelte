@@ -51,6 +51,7 @@
 
     /* Animation */
     .anim-typewriter {
+        color: rgb(0, 125, 254);
         border-right: 2px solid rgba(255, 255, 255, 0.11);
         animation: blinkTextCursor 500ms infinite normal;
     }
