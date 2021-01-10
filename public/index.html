@@ -7,8 +7,105 @@
 
 	<title>Demiror</title>
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link rel='stylesheet' href='/global.css'>
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+		@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+		html {
+			box-sizing: border-box
+		}
+
+		*,
+		:after,
+		:before {
+			box-sizing: inherit
+		}
+
+
+		.loading {
+			transition: opacity .25s ease-in-out;
+			width: 100%;
+			margin: 0 auto;
+			background-color: #1c1c1c;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			max-width: 100%;
+			max-height: 100%;
+			overflow: auto;
+			z-index: 1;
+		}
+
+		.loading #content,
+		.loading #content {
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			top: 40%
+		}
+
+		.loading #content .title,
+		.loading #content .title {
+			color: #f5f2e5;
+			font-family: 'Abril Fatface', cursive;
+			font-size: 4rem;
+			text-transform: uppercase;
+			padding-bottom: 0;
+			margin-bottom: 0
+		}
+
+		.lds-ring {
+			transform: scale(0.5);
+			display: inline-block;
+			position: relative;
+			width: 80px;
+			height: 80px;
+		}
+
+		.lds-ring div {
+			box-sizing: border-box;
+			display: block;
+			position: absolute;
+			width: 64px;
+			height: 64px;
+			margin: 8px;
+			border: 8px solid #fff;
+			border-radius: 50%;
+			animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+			border-color: #fff transparent transparent transparent;
+		}
+
+		.lds-ring div:nth-child(1) {
+			animation-delay: -0.45s;
+		}
+
+		.lds-ring div:nth-child(2) {
+			animation-delay: -0.3s;
+		}
+
+		.lds-ring div:nth-child(3) {
+			animation-delay: -0.15s;
+		}
+
+		@keyframes lds-ring {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
 	<link rel='stylesheet' href='/build/bundle.css'>
 
 	<link href="https://unpkg.com/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
