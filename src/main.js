@@ -12,6 +12,7 @@ function delay(ms) {
 
 window.onload = async () => {
 	let elem = document.querySelector(".loading")
+	await delay(200);
 	document.querySelector(".lds-ring").remove()
 	await delay(800);
 	elem.style.opacity = 0

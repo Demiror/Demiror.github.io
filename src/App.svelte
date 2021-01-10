@@ -1,6 +1,5 @@
 <script>
-	import { onMount } from "svelte";
-	import Navbar from "./Navbar.svelte";
+	import Navbar from "./sections/Navbar.svelte";
 </script>
 
 <Navbar />
