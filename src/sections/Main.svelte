@@ -64,9 +64,16 @@
     }
 </style>
 
-<div class="flex flex-col h-screen bg-blue-50">
-    <div class="m-auto flex flex-col sm:flex-row">
-        <p class="line sm:mr-4">{startText}</p>
-        <p class="line m-auto"><span class="anim-typewriter">{text}</span></p>
+<div class="flex h-screen bg-blue-50">
+    <div class="flex flex-auto flex-col sm:flex-row max-w-7xl mx-auto">
+        <div class="mt-auto sm:m-auto flex flex-col sm:flex-row">
+            <p class="line sm:mr-4">{startText}</p>
+            <p class="line m-auto">
+                <span class="anim-typewriter">{text}</span>
+            </p>
+        </div>
+        <div class="mb-auto sm:my-auto sm:mr-10 max-w-md">
+            <img class="sm:mb-10" src="/assets/team.png" alt="us" />
+        </div>
     </div>
 </div>
